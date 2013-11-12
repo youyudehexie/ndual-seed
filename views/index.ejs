@@ -11,7 +11,11 @@
 <script src="/javascripts/ndual.js"></script>
 <script>
     Ndual(function(message){
-            console.log(message)
+
+        var e = document.createElement('p');
+        e.innerHTML = message;
+        document.body.appendChild(e);
+            //console.log(message)
     })
 </script>
   </body>
